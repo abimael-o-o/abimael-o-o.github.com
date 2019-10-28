@@ -68,8 +68,8 @@ p {
   background-color: black;
   position: fixed;
   z-index: 10;
-  height: 60%;
-  width: 60%;
+  min-height: 60%;
+  min-width: 60%;
   display: flex;
   opacity: 0;
   visibility: hidden;
@@ -84,7 +84,21 @@ p {
   padding-top: 10%;
   padding-bottom: 10%;
 }
-
+@media only screen and (max-width: 600px){
+  .modal{
+    max-width: 90%;
+    height: 80%;
+  }
+  .modal-content{
+    margin: mp;
+    width: auto;
+    height: auto;
+    padding: 10px;
+  }
+  .span-box{
+    position: absolute;
+  }
+}
 .modal-content p,
 a {
   text-decoration: none;
@@ -131,6 +145,7 @@ a {
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
+@media only screen and (min-width: 600px){
 .portfolio {
   height: 100vh;
   display: flex;
@@ -149,7 +164,7 @@ a {
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
 }
-
+}
 .box1 {
   display: flex;
   justify-content: center;
@@ -164,13 +179,18 @@ a {
   padding: 10%;
   padding-right: 40%;
 }
-
+@media only screen and (max-width: 600px){
+  .content{
+    padding: 10%;
+  }
+}
 .social-links {
   margin-top: 20%;
   margin-bottom: 20%;
   flex: row;
   height: 100%;
   width: 100%;
+  display: inline-block;
 }
 
 .kern {
@@ -179,6 +199,10 @@ a {
   transition: ease-in-out;
 }
 
+.itch{
+  height: 30px;
+  width: auto;
+}
 .kern:hover {
   height: 100%;
 }
@@ -289,21 +313,27 @@ img {
   display: flex;
 }
 
-.newsletter {
+.blog {
   padding-left: 35%;
   padding-right: 35%;
   margin: auto;
 }
 
-.newsletter span {
+.blog span {
   color: gray;
 }
 
-.email-form {
+.blog-link {
   margin-top: 35px;
   justify-content: initial;
 }
 
-.tbn {
+.btn {
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .blog{
+    padding: 10%;
+  }
 }
