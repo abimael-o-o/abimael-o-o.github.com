@@ -2,7 +2,7 @@ body {
     min-height: 200vh;
   }
   
-  a {
+  a{
     cursor: pointer;
+    font-size: 20px;
   }
-  
