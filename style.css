@@ -6,3 +6,38 @@ body {
     cursor: pointer;
     font-size: 20px;
   }
+ .mobile-container{
+   display: none;
+ }
+ @media(max-width: 768px){
+   .mobile-container{
+     display: flex;
+     width: auto;
+     position: fixed;
+     z-index: 0;
+     height: 100%;
+     width: 100%;
+   }
+ }
+ #navButton{
+   border: 0;
+   justify-content: center;
+   align-items: center;
+   color: rgb(235, 11, 96);
+   border-radius: 50%;
+   height: 60px;
+   width: 60px;
+   font-size: 20px;
+   z-index: 1;
+   bottom: 0;
+   padding: 10%;
+ }
+ .mobile-nav{
+  display: flex;
+  right: 0;
+  width: auto;
+  position: fixed;
+  bottom: 0;
+  padding: 10%;
+  z-index: 0;
+}

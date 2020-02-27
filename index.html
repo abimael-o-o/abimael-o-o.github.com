@@ -21,16 +21,31 @@
     <title>abimael_dev</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-left">
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-target">
-        <a class="navbar-brand">
-              <i class="cil-fingerprint" style="color: rgb(235, 11, 96);"></i>
+    <div class="mobile-container">
+      <div class="mobile-nav">
+        <button class="bg-dark" id="navButton">
+          <i class="cil-fingerprint"></i>
+        </button>
+      </div>
+      <div id="targetThis">
+        <a>
+          <i class="cib-github"></i>
         </a>
-      </button>
+        <a>
+          <i class="cib-twitter"></i>
+        </a>
+        <a>
+          <i  class="cib-linkedin"></i>
+        </a>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-left">
       <div class="collapse navbar-collapse" id="nav-target">
-        <ul class="nav mr-auto justify-content-center">
+        <ul class="nav justify-content-center">
           <li class="nav-item">
-            
+              <a class="nav-link takeout">
+                    <i class="cil-fingerprint" style="color: rgb(235, 11, 96);"></i>
+              </a>
           </li>
           <li class="nav-item">
             <a class="nav-link">
@@ -52,6 +67,7 @@
     </nav>
 
     <!--JS Scripts-->
+    <script src="main.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
