@@ -44,7 +44,7 @@ body {
   @media (max-width: 650px) {
     .navbar.fixed-left {
       right: auto;
-      display: none;
+      /*display: none;*/
     }
     .navbar.fixed-left .navbar-nav .nav-item .dropdown-toggle:after {
       border-top: 0.3em solid transparent;
