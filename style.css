@@ -1,43 +1,30 @@
-body {
-    min-height: 200vh;
-  }
   
-  a{
-    cursor: pointer;
-    font-size: 20px;
-  }
- .mobile-container{
-   display: none;
- }
- @media(max-width: 768px){
-   .mobile-container{
-     display: flex;
-     width: auto;
-     position: fixed;
-     z-index: 0;
-     height: 100%;
-     width: 100%;
-   }
- }
- #navButton{
-   border: 0;
-   justify-content: center;
-   align-items: center;
-   color: rgb(235, 11, 96);
-   border-radius: 50%;
-   height: 60px;
-   width: 60px;
-   font-size: 20px;
-   z-index: 1;
-   bottom: 0;
-   padding: 10%;
- }
- .mobile-nav{
-  display: flex;
-  right: 0;
-  width: auto;
-  position: fixed;
-  bottom: 0;
-  padding: 10%;
-  z-index: 0;
+:root {
+  font-size: 16px;
+  font-family: 'Open Sans';
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --transition-speed: 600ms;
+}
+body {
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  min-height: 200vh;
+}
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+body::-webkit-scrollbar-thumb {
+  background: #23232e;
+}
+main {
+  margin-left: 5rem;
+  padding: 1rem;
 }
