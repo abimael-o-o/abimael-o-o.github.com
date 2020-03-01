@@ -1,0 +1,22 @@
+header{
+    background-color: grey;
+    display: flex;
+}
+.introduction{
+    width: 50%;
+    background-color: black;
+} 
+@media(max-width: 900px){
+    header{
+        background-color: grey;
+        display: block;
+    }
+    .introduction{
+        width: auto;
+        background-color: black;
+    } 
+}
+footer{
+    height: 100vh;
+    background-color: rgb(5, 5, 46);
+}

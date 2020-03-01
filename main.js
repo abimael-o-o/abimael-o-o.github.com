@@ -21,7 +21,4 @@ if(window.innerWidth <= 600 ){
     }
         nav.style.display = 'none';
         navbar.style = 'height: 100px' 
-
-
-    
 }
