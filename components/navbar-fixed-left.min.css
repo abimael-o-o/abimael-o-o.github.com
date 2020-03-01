@@ -39,7 +39,7 @@ li{
   justify-content: center;
   align-items: center;
 }
-a{
+.nav-link{
   display: flex;
   text-decoration: none;
   color: var(--bg-primary);
@@ -50,7 +50,7 @@ a{
   align-items: center;
   font-size: 30px;
 }
-a:hover{
+.nav-link:hover{
   background-color: rgba(0, 0, 0, 0.144);
   color: #333333;
 }
@@ -113,7 +113,7 @@ nav{
     height: 30%;
     width: 50%;
   }
-  a{
+  .nav-link{
     position: absolute;
     width: 40px;
     height: 40px;

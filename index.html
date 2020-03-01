@@ -79,11 +79,48 @@
         </div>
       </header>
       <footer>
-        <h1>Lorem Footer</h1>
+        
+        <div class="devArticle">
+          <a target="_blank" id="devArticle">
+            <h1>
+             <span id="testingAPI"></span>
+            </h1>
+            <div style="display: flex;">
+              <img id="profile_image" style="width: 50px;">
+              <div>
+                <p id="tags"></p>
+                <p id="username"></p>
+              </div>
+            </div>
+          </a>
+        </div>
       </footer>
     </main>
 
     <!--JS Scripts-->
+    <script>
+      const api_url = 'https://dev.to/api/articles?username=abimaeloo';
+      async function getArticle(){
+        const response = await fetch(api_url);
+        const data = await response.json();
+        const title = data[0].title;
+        const link = data[0].url; //https://dev.to/abimaeloo/article?
+        const profilePic = data[0].user.profile_image;
+        const tag = data[0].tag_list;
+        const name = data[0].user.username;
+;
+        document.getElementById('testingAPI').textContent = title;
+        document.getElementById('devArticle').href = link;
+        document.getElementById('profile_image').src = profilePic;
+        document.getElementById('tags').textContent = tag.map(i => "#" + i);
+        document.getElementById('username').textContent = "@"+name;
+
+        console.log(data);
+      }
+
+      getArticle();
+
+    </script>
     <script src="main.js"></script>
   </body>
 </html>

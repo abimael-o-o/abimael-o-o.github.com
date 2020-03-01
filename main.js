@@ -1,4 +1,4 @@
-const mobileNav = document.getElementById('nav');
+const nav = document.getElementById('nav');
 const btn = document.getElementById('btn-toggle');
 const navbar = document.getElementById('navbar');
 const btnX = document.getElementById('btnX');
@@ -19,6 +19,6 @@ if(window.innerWidth <= 600 ){
             nav.style.display = 'none';
         }
     }
-        nav.style.display = 'none';
-        navbar.style = 'height: 100px' 
-}
+};
+
+

@@ -18,5 +18,13 @@ header{
 }
 footer{
     height: 100vh;
-    background-color: rgb(5, 5, 46);
+}
+.devArticle{
+    border: 1px solid;
+    border-color: whitesmoke;
+    padding: 10%;
+}
+#devArticle{
+    color: white;
+    text-decoration: none;
 }
