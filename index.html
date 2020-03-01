@@ -65,7 +65,7 @@
       </div>
     </nav>
     <main>
-      <header>
+      <header class="section">
         <div class="introduction">
           <h1>Introduction</h1>
           <p>
@@ -78,20 +78,22 @@
           <h1>Projects</h1>
         </div>
       </header>
-      <footer>
-        
+      <footer class="section">
         <div class="devArticle">
           <a target="_blank" id="devArticle">
             <h1>
-             <span id="testingAPI"></span>
+             <span id="article_title"></span>
             </h1>
-            <div style="display: flex;">
-              <img id="profile_image" style="width: 50px;">
+            <div class="article-info">
+              <div>
+                <img id="profile_image" style="width: 50px;"> 
+              </div>
               <div>
                 <p id="tags"></p>
                 <p id="username"></p>
               </div>
             </div>
+            <!--<p id="article_description"></p>-->
           </a>
         </div>
       </footer>
@@ -108,12 +110,14 @@
         const profilePic = data[0].user.profile_image;
         const tag = data[0].tag_list;
         const name = data[0].user.username;
-;
-        document.getElementById('testingAPI').textContent = title;
+        //const descript = data[0].description;
+
+        document.getElementById('article_title').textContent = title;
         document.getElementById('devArticle').href = link;
         document.getElementById('profile_image').src = profilePic;
         document.getElementById('tags').textContent = tag.map(i => "#" + i);
         document.getElementById('username').textContent = "@"+name;
+        //document.getElementById('article_description').textContent = descript;
 
         console.log(data);
       }

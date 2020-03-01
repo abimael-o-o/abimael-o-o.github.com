@@ -20,6 +20,8 @@ body::-webkit-scrollbar-thumb {
 }
 main {
   margin-left: 5rem;
+}
+.section{
   padding: 1rem;
 }
 @media(max-width: 600px){
