@@ -7,6 +7,7 @@
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="navbar-fixed-left.min.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/@coreui/icons@1.0.0/css/all.min.css"
@@ -27,7 +28,30 @@
   </head>
 
   <body>
-    <nav> 
+    <nav class="navbar" id="navbar"> 
+      <div class="btn-menu">
+        <button class="menu-logo" id="btn-toggle">
+          <i class="cil-fingerprint"></i>
+        </button>
+      </div>
+      <div class="nav" id="nav">
+        <ul>
+          <li>
+            <a href="">Icon</a>
+          </li>
+          <li>
+            <a href="">Icon</a>
+          </li>
+          <li>
+            <a href="">Icon</a>
+          </li>
+        </ul>
+        <div class="btn-menu">
+          <button class="menu-logo" id="btnX">
+            <i class="cil-x"></i>
+          </button>
+        </div>
+      </div>
     </nav>
     <main>
       <h1>Lorem Ipsum</h1>
@@ -39,6 +63,7 @@
         Consectetur sint fugiat excepteur anim voluptate cillum do elit aliquip
         deserunt sint.
       </p>
+      <button>test</button>
     </main>
 
     <!--JS Scripts-->
