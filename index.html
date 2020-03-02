@@ -6,13 +6,18 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
+
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link
       rel="stylesheet"
       type="text/css"
       href="./components/navbar-fixed-left.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="components/main-content.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="components/main-content.min.css"
+    />
     <link
       rel="stylesheet"
       href="https://unpkg.com/@coreui/icons@1.0.0/css/all.min.css"
@@ -67,11 +72,13 @@
     <main>
       <header class="section">
         <div class="introduction">
-          <h1>Introduction</h1>
+          <h1>Software Engineer</h1>
           <p>
-            Sit nostrud culpa voluptate mollit culpa aliquip reprehenderit magna
-            cupidatat. Ipsum minim commodo Lorem veniam. Lorem ex culpa sit
-            consectetur ullamco nisi commodo reprehenderit anim mollit nulla.
+            Hi my name is Abimael, I'm a Front-End Developer. I have recently
+            started working a lot on open source projects and you can see some
+            of my contributions on github. Trough this I have gained valuable
+            skills and are threfore looking for companies willing to offer me a
+            place among their developers.
           </p>
         </div>
         <div class="projects">
@@ -82,11 +89,11 @@
         <div class="devArticle">
           <a target="_blank" id="devArticle">
             <h1>
-             <span id="article_title"></span>
+              <span id="article_title"></span>
             </h1>
             <div class="article-info">
               <div>
-                <img id="profile_image" style="width: 50px;"> 
+                <img id="profile_image" style="width: 50px;" />
               </div>
               <div>
                 <p id="tags"></p>
@@ -101,8 +108,8 @@
 
     <!--JS Scripts-->
     <script>
-      const api_url = 'https://dev.to/api/articles?username=abimaeloo';
-      async function getArticle(){
+      const api_url = "https://dev.to/api/articles?username=abimaeloo";
+      async function getArticle() {
         const response = await fetch(api_url);
         const data = await response.json();
         const title = data[0].title;
@@ -112,18 +119,18 @@
         const name = data[0].user.username;
         //const descript = data[0].description;
 
-        document.getElementById('article_title').textContent = title;
-        document.getElementById('devArticle').href = link;
-        document.getElementById('profile_image').src = profilePic;
-        document.getElementById('tags').textContent = tag.map(i => "#" + i);
-        document.getElementById('username').textContent = "@"+name;
+        document.getElementById("article_title").textContent = title;
+        document.getElementById("devArticle").href = link;
+        document.getElementById("profile_image").src = profilePic;
+        document.getElementById("tags").textContent = tag.map(i => "#" + i);
+        document.getElementById("username").textContent = "@" + name;
         //document.getElementById('article_description').textContent = descript;
 
         console.log(data);
       }
 
       getArticle();
-
+     
     </script>
     <script src="main.js"></script>
   </body>

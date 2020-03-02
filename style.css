@@ -1,6 +1,7 @@
 :root{
   font-size: 16px;
-  font-family: 'Open Sans';
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
 }
 body {
   color: white;

@@ -5,7 +5,6 @@ const btnX = document.getElementById('btnX');
 
 
 if(window.innerWidth <= 600 ){
-    console.log('yes');
     btn.onclick  = () => {
         nav.style.display = 'block';
         navbar.style = 'height: 100%'

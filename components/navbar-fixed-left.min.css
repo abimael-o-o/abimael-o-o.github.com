@@ -1,10 +1,10 @@
 :root {
-  font-size: 16px;
-  font-family: 'Open Sans';
   --text-primary: #333333;
   --text-secondary: #ececec;
-  --bg-primary: #23232e;
-  --bg-secondary: #141418;
+  --bg-primary: #202c3d;
+  --theme-lighter: #424a54;
+  --theme-darker: #0d1219;
+  --bg-secondary: #141f2d;
   --transition-speed: 600ms;
 }
 .menu-logo{
@@ -42,7 +42,7 @@ li{
 .nav-link{
   display: flex;
   text-decoration: none;
-  color: var(--bg-primary);
+  color: var(--theme-lighter);
   height: 100%;
   width: 100%;
   text-align: center;
@@ -51,8 +51,7 @@ li{
   font-size: 30px;
 }
 .nav-link:hover{
-  background-color: rgba(0, 0, 0, 0.144);
-  color: #333333;
+  background-color: var(--bg-primary);
 }
 .navbar{
   background-color: var(--bg-secondary);
