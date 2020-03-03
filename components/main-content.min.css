@@ -4,12 +4,15 @@ header{
 }
 .introduction{
     width: 50%;
-    background-color: black;
+    background-color: rgb(9, 11, 16);
     padding: 10%;
 } 
 .projects{
-    width: 50%;
-    padding: 10%;
+    min-width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media(max-width: 900px){
     header{
@@ -17,8 +20,7 @@ header{
     }
     .introduction{
         width: auto;
-        background-color: black;
-        padding: 10%;
+        padding: 15%;
     } 
 }
 footer{
@@ -63,10 +65,31 @@ footer{
         padding-left: 20px;
     }
 }
-.skills{
-    border: 0.1px solid;
-    padding: 5px;
-    font-size: 16px;
-    margin-bottom: 5%;
-    color: var(--theme-lighter);
+.badges-container{
+    margin-top: 1px;
+    margin-bottom: 2rem;
 }
+.btn{
+	text-decoration:none;
+	color: rgba(255, 255, 255, 0.60);
+	font-size:10px;
+	font-weight: 700;
+	padding:0 5px;
+	line-height:20px;
+	height: auto;
+	display:inline-block;
+	text-align:center;
+	background-color:var(--bg-primary);
+}
+.btn.pill{
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+  }
+  #animateThis{
+    animation: animated-cursor 600ms steps(29,end) infinite;
+  }
+  @keyframes animated-cursor{
+    from{border-bottom-color: rgba(0,255,0,.75);}
+    to{border-bottom-color: transparent;}
+  }

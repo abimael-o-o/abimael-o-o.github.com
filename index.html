@@ -70,9 +70,15 @@
       </div>
     </nav>
     <main>
-      <header class="section">
-        <div class="introduction">
-          <h1>Software Engineer</h1>
+      <header>
+        <div class="introduction section">
+          <h1 style="font-size: 40px;">Software Engineer</h1>
+          <p class="badges-container">
+            <a class="btn pill" href="#">javascript</a>
+            <a class="btn pill" href="#">react</a>
+            <a class="btn pill" href="#">vue.js</a>
+            <a class="btn pill" href="#">three,js</a>
+          </p>
           <p>
             Hi my name is Abimael, I'm a Front-End Developer. I have recently
             started working a lot on open source projects and you can see some
@@ -80,9 +86,14 @@
             skills and are threfore looking for companies willing to offer me a
             place among their developers.
           </p>
+          <p>I am a huge JS nerd and have a lot of experience using React.</p>
         </div>
         <div class="projects">
-          <h1>Projects</h1>
+          <div style="margin: auto;">
+            <h1 style="font-size: 40px;">
+              PRO<br />JEC<br />TS<span id="cursor">_</span>
+            </h1>
+          </div>
         </div>
       </header>
       <footer class="section">
@@ -100,7 +111,6 @@
                 <p id="username"></p>
               </div>
             </div>
-            <!--<p id="article_description"></p>-->
           </a>
         </div>
       </footer>
@@ -117,20 +127,18 @@
         const profilePic = data[0].user.profile_image;
         const tag = data[0].tag_list;
         const name = data[0].user.username;
-        //const descript = data[0].description;
 
         document.getElementById("article_title").textContent = title;
         document.getElementById("devArticle").href = link;
         document.getElementById("profile_image").src = profilePic;
         document.getElementById("tags").textContent = tag.map(i => "#" + i);
         document.getElementById("username").textContent = "@" + name;
-        //document.getElementById('article_description').textContent = descript;
 
         console.log(data);
       }
 
       getArticle();
-     
+
     </script>
     <script src="main.js"></script>
   </body>
