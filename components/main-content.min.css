@@ -86,10 +86,3 @@ footer{
     -moz-border-radius: 16px;
     border-radius: 16px;
   }
-  #animateThis{
-    animation: animated-cursor 600ms steps(29,end) infinite;
-  }
-  @keyframes animated-cursor{
-    from{border-bottom-color: rgba(0,255,0,.75);}
-    to{border-bottom-color: transparent;}
-  }
