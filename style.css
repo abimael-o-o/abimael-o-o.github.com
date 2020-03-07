@@ -19,14 +19,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: #23232e;
 }
-main {
-  margin-left: 5rem;
-}
 .section{
   padding: 1rem;
-}
-@media(max-width: 600px){
-  main {
-    margin-left: 0;
-  }
 }

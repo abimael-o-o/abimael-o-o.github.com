@@ -20,31 +20,29 @@ header{
     }
     .introduction{
         width: auto;
-        padding: 15%;
+        padding: 50px;
     } 
 }
-footer{
-    display: flex;
-    min-height: 60vh;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--theme-darker);
-}
-.devArticle{
+.devArticle {
     display: flex;
     border: 2px solid;
     border-color: var(--bg-primary);
     border-radius: 5%;
-    width: 450px;
-    height: 180px;
-    padding-left: 50px;
+    padding: 20px;
     align-items: center;
     background-color: var(--theme-darker);
+    min-height: 180px;
+    position: relative;
+}
+@media(min-width: 600px){
+    .devArticle{
+        padding-left: 50px;
+    }
 }
 #devArticle{
+    display: block;
     color: white;
     text-decoration: none;
-    width: 100%;
 }
 #profile_image{
     border-radius: 50%;
@@ -58,12 +56,6 @@ footer{
 }
 #tags{
     color: grey;
-}
-@media (max-width: 600px){
-    .devArticle{
-        width: 100%;
-        padding-left: 20px;
-    }
 }
 .badges-container{
     margin-top: 1px;
