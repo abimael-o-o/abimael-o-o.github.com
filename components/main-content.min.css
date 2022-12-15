@@ -1,3 +1,12 @@
+:root {
+    --text-primary: #333333;
+    --text-secondary: #ececec;
+    --bg-primary: #202c3d;
+    --theme-lighter: #424a54;
+    --theme-darker: #0d1219;
+    --bg-secondary: #141f2d;
+    --transition-speed: 600ms;
+  }
 header{
     display: flex;
     min-height: 90vh;
